@@ -1,0 +1,39 @@
+#forma {
+	width: 30%;
+	margin: 40px auto;
+}
+h1 {
+	text-align: left;
+}
+
+.navbar {
+	height: 60px
+}
+
+.navbar-brand {
+	padding: 10px;
+}
+.nav.navbar-nav.navbar-right{
+	padding: 7px;
+}
+.thumbnail img{
+	width: 100%;
+}
+.thumbnail {
+	padding: 0;
+}
+
+.thumbnail .caption-full {
+	padding: 9px;
+}
+.delete-form {
+	display: inline;
+}
+
+.form {
+	width: 30%; 
+	margin: 25px auto;
+}
+.header-form {
+	text-align: center
+}
