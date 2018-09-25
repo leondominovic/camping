@@ -17,6 +17,7 @@ var commentRoutes 		= require("./routes/comments"),
 	indexRoutes 		= require("./routes/index");
 
 mongoose.connect("mongodb://localhost/camping",{ useNewUrlParser: true });
+
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + "/public"));
@@ -58,3 +59,4 @@ app.use("/campgrounds/:id/comments", commentRoutes);
 app.listen(3000, function(){
 	console.log("Server has started!");
 });
+
