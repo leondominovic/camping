@@ -35,11 +35,11 @@ router.post("/register", function(req, res){
 		if(err){
 			return res.render("register",{error: err.message});
 		}
-		passport.authenticate("local")(req, res, function(){
+		User.authenticate("local")(req, res, function(){
 			req.flash("success", "Welcome to YelpCamp" + user.username);
 			res.redirect("/campgrounds");
 		});
-	});
+	});	
 });
 
 // shoe login form
